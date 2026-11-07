@@ -1,0 +1,545 @@
+<!doctype html>
+<!-- ============================================================
+     SleepFlow — Landing Page · public/index.html
+     "Una sola noche" · CC52 Ingeniería de Software · UPC · Grupo 02
+     Paleta nocturna (índigo/lavanda/dorado + serif editorial),
+     layout editorial asimétrico, filas regladas, arco anochecer→amanecer.
+     Estilos: assets/styles/styles.css · Lógica: assets/scripts/main.js
+============================================================ -->
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SleepFlow</title>
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="assets/styles/styles.css" />
+<script src="assets/scripts/main.js"></script>
+</head>
+<body>
+
+<div class="sky"></div>
+
+<!-- ═══ NAV ═══ -->
+<header class="topnav" data-od-id="topnav">
+  <div class="container topnav-inner">
+    <a class="logo" href="#inicio">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.6 14.6A8.8 8.8 0 0 1 9.4 3.4a.6.6 0 0 0-.8-.7 9.9 9.9 0 1 0 12.7 12.7.6.6 0 0 0-.7-.8Z"/></svg>
+      SleepFlow
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#problema">El problema</a>
+      <a href="#pilares">Funciones</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#precios">Precios</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#descargar" data-od-id="nav-cta">Descargar</a>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- ═══ 1 · HERO — anochecer (22:58) ═══ -->
+<section class="hero" id="inicio" data-od-id="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="time num">22:58</span>Sleep tech peruana · hecha para tu rutina real</p>
+      <h1>Duerme mejor con lo simple. <em class="serif">Solo tu celular.</em></h1>
+      <p class="lead">Sonidos que calman, una alarma que respeta tu ciclo y un resumen semanal que entiendes de un vistazo. Sin wearables, sin cientos de opciones, en español.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#descargar" data-od-id="hero-cta-descargar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5"/><path d="M4 21h16"/></svg>
+          Descargar gratis
+        </a>
+        <a class="btn btn-secondary" href="#como-funciona">Ver cómo funciona</a>
+      </div>
+      <p class="meta hero-note">Gratis para empezar · Android e iOS · No requiere tarjeta</p>
+    </div>
+
+    <div class="hero-scene" data-od-id="hero-mockup">
+      <div class="scene-glow"></div>
+      <svg class="moon-big" viewBox="0 0 24 24" fill="currentColor"><path d="M20.6 14.6A8.8 8.8 0 0 1 9.4 3.4a.6.6 0 0 0-.8-.7 9.9 9.9 0 1 0 12.7 12.7.6.6 0 0 0-.7-.8Z"/></svg>
+      <div class="scene phone-tilt">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="p-island" aria-hidden="true"></div>
+            <div class="p-status"><span class="num">23:47</span>
+              <span aria-hidden="true">
+                <svg width="14" height="10" viewBox="0 0 16 11" fill="currentColor"><rect x="0" y="6" width="3" height="5" rx="1"/><rect x="4.5" y="4" width="3" height="7" rx="1"/><rect x="9" y="2" width="3" height="9" rx="1"/><rect x="13" y="0" width="3" height="11" rx="1" opacity=".35"/></svg>
+                <svg width="14" height="10" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1.5 4.5a10 10 0 0 1 13 0M4 7.2a6.3 6.3 0 0 1 8 0M6.5 9.8a2.6 2.6 0 0 1 3 0"/><circle cx="8" cy="11" r=".9" fill="currentColor" stroke="none"/></svg>
+                <svg width="20" height="10" viewBox="0 0 25 12" fill="none"><rect x=".8" y=".8" width="20" height="10.4" rx="3" stroke="currentColor" opacity=".5"/><rect x="2.6" y="2.6" width="13" height="6.8" rx="1.6" fill="currentColor"/><path d="M23 4v4a2.2 2.2 0 0 0 0-4Z" fill="currentColor" opacity=".5"/></svg>
+              </span>
+            </div>
+            <div class="p-body">
+              <div class="p-eyebrow">Modo dormir</div>
+              <div class="p-moonwrap">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.6 14.6A8.8 8.8 0 0 1 9.4 3.4a.6.6 0 0 0-.8-.7 9.9 9.9 0 1 0 12.7 12.7.6.6 0 0 0-.7-.8Z"/></svg>
+              </div>
+              <div class="p-card">
+                <span class="p-label">Sonando ahora</span>
+                <div class="p-row">
+                  <strong>Lluvia sobre hojas</strong>
+                  <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+              </div>
+              <div class="p-chips">
+                <span class="p-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v3M6.3 6.3l-2-2M2 12h3M19 12h3M17.7 6.3l2-2"/><circle cx="12" cy="15" r="5"/></svg>Temporizador · 45 min</span>
+                <span class="p-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 10c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0M3 16c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0"/></svg>Lluvia</span>
+              </div>
+              <div class="p-card">
+                <div class="p-row">
+                  <div><span class="p-label">Alarma</span><span class="p-time">7:30</span></div>
+                  <span class="p-chip" style="border-style:dashed">Ciclo guiado</span>
+                  <span class="p-toggle" aria-hidden="true"></span>
+                </div>
+              </div>
+              <button class="p-cta" type="button" tabindex="-1" aria-hidden="true">Activar modo dormir</button>
+              <div class="p-tabbar">
+                <span class="p-tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0M3 16c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0"/></svg>Sonidos</span>
+                <span class="p-tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>Alarma</span>
+                <span class="p-tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Resumen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-strip">
+    <div class="container hero-strip-inner">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Sin wearables</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>En español</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Android e iOS</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Bajo consumo de batería</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 2 · EL PROBLEMA (00:20) — filas regladas ═══ -->
+<section class="section" id="problema" data-od-id="problema">
+  <div class="container">
+    <div class="sec-grid">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow"><span class="time num">00:20</span>01 · El problema</p>
+        <h2>Perú duerme mal. Y las apps actuales no ayudan.</h2>
+        <p class="lead">No es una percepción: son datos. Entre las pantallas, los turnos y la mente acelerada, dormir bien se volvió el privilegio de pocos.</p>
+      </div>
+      <div class="stat-list">
+        <div class="stat-row" data-od-id="stat-pantallas" data-reveal>
+          <b>57<sub>%</sub></b>
+          <div>
+            <p>de adultos ha recortado horas de sueño por el uso nocturno de pantallas.</p>
+            <span class="meta">WIN · Infobae, 2025</span>
+          </div>
+        </div>
+        <div class="stat-row" data-od-id="stat-universitarios" data-reveal>
+          <b>+35<sub>%</sub></b>
+          <div>
+            <p>de universitarios limeños presenta síntomas de insomnio.</p>
+            <span class="meta">Armas-Elguera et al., 2021</span>
+          </div>
+        </div>
+        <div class="stat-row" data-od-id="stat-minsa" data-reveal>
+          <b>25–35<sub>%</sub></b>
+          <div>
+            <p>de adultos peruanos reporta problemas de sueño.</p>
+            <span class="meta">MINSA</span>
+          </div>
+        </div>
+        <div class="stat-row" data-od-id="stat-inei" data-reveal>
+          <b>~6<sub>h</sub></b>
+          <div>
+            <p>duerme en promedio la población de 20 a 59 años. Menos de lo recomendado.</p>
+            <span class="meta">INEI · ENUT, 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="problem-notes" data-reveal>
+      <div data-od-id="competencia-falla">
+        <h3>Las alternativas fallan donde importa</h3>
+        <p>Sleep Cycle convierte tu descanso en dashboards técnicos. BetterSleep te ahoga entre cientos de opciones. AutoSleep ni siquiera funciona sin un Apple Watch. Ninguna fue pensada para alguien que duerme a las 2 a.m. y se despierta a las 7.</p>
+      </div>
+      <div data-od-id="necesidad-real">
+        <h3>Lo que la gente pide es simple</h3>
+        <p>Calmar la mente, despertar mejor y saber cómo durmió — sin volverse experto en métricas. Ese es exactamente el espacio de SleepFlow: todo lo esencial, nada de más.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 3 · LOS 3 PILARES (01:05) — filas alternadas ═══ -->
+<section class="section" id="pilares" data-od-id="pilares">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span class="time num">01:05</span>02 · La solución</p>
+      <h2>Tres pilares. Nada de más.</h2>
+      <p class="lead">Cada función de SleepFlow responde a una necesidad real de nuestras entrevistas. Si no ayuda a dormir mejor, no está en la app.</p>
+    </div>
+
+    <article class="pillar-row" data-od-id="pilar-sonidos" data-reveal>
+      <span class="ghost-num">01</span>
+      <div class="pillar-text">
+        <span class="p-num">PILAR 01</span>
+        <h3>Sonidos que calman</h3>
+        <p>Lluvia, ruido blanco y más, con temporizador de apagado automático: elige un sonido, pon 45 minutos y duérmete. Nada queda sonando hasta el amanecer.</p>
+      </div>
+      <div class="pillar-vis">
+        <div class="pane" aria-hidden="true">
+          <span class="p-label">Sonando ahora</span>
+          <div class="pane-row">
+            <span class="pane-title">Lluvia sobre hojas</span>
+            <span class="eq"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div style="display:flex; gap:7px; flex-wrap:wrap">
+            <span class="pane-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v3M2 12h3M19 12h3M17.7 6.3l2-2M6.3 6.3l-2-2"/><circle cx="12" cy="15" r="5"/></svg>15 min</span>
+            <span class="pane-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v3M2 12h3M19 12h3M17.7 6.3l2-2M6.3 6.3l-2-2"/><circle cx="12" cy="15" r="5"/></svg>30 min</span>
+            <span class="pane-chip" style="border-color:var(--night-accent); color:var(--night-fg)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v3M2 12h3M19 12h3M17.7 6.3l2-2M6.3 6.3l-2-2"/><circle cx="12" cy="15" r="5"/></svg>45 min ✓</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="pillar-row flip" data-od-id="pilar-alarmas" data-reveal>
+      <span class="ghost-num">02</span>
+      <div class="pillar-text">
+        <span class="p-num">PILAR 02</span>
+        <h3>Alarmas de ciclo guiado</h3>
+        <p>La alarma acompaña tu ciclo de sueño para un despertar natural, no abrupto. Y se programa a cualquier hora: las 7 a.m. o las 3 p.m. después del turno nocturno.</p>
+      </div>
+      <div class="pillar-vis">
+        <div class="pane" aria-hidden="true">
+          <span class="p-label">Alarma · ciclo guiado</span>
+          <svg viewBox="0 0 260 96" style="width:100%; height:auto">
+            <path d="M18 88 A112 112 0 0 1 242 88" fill="none" stroke="rgb(58, 57, 86)" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>
+            <path d="M18 88 A112 112 0 0 1 210 26" fill="none" stroke="rgb(180, 171, 255)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="210" cy="26" r="6" fill="rgb(231, 203, 128)"/>
+            <circle cx="210" cy="26" r="11" fill="none" stroke="rgba(231, 203, 128, .35)"/>
+            <text x="18" y="82" fill="rgb(162, 162, 183)" font-family="ui-monospace, monospace" font-size="11">23:00</text>
+            <text x="196" y="52" fill="rgb(234, 234, 243)" font-family="ui-monospace, monospace" font-size="12" font-weight="600">7:30</text>
+          </svg>
+          <div class="pane-row">
+            <span class="pane-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>Despertar suave</span>
+            <span class="pane-chip">8 h 30 m de sueño</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="pillar-row" data-od-id="pilar-metricas" data-reveal>
+      <span class="ghost-num">03</span>
+      <div class="pillar-text">
+        <span class="p-num">PILAR 03</span>
+        <h3>Métricas que sí entiendes</h3>
+        <p>Un gráfico semanal simple: horas dormidas y calidad percibida. En diez segundos sabes cómo fue tu semana — sin curvas técnicas ni jerga.</p>
+      </div>
+      <div class="pillar-vis">
+        <div class="pane" aria-hidden="true">
+          <span class="p-label">Tu semana</span>
+          <div class="bars">
+            <i style="height:72%"></i><i style="height:48%"></i><i style="height:84%"></i><i style="height:60%"></i><i style="height:78%"></i><i class="hi" style="height:96%"></i><i style="height:55%"></i>
+          </div>
+          <div class="bars-days"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="pane-foot"><span>Promedio semanal</span><b>7 h 06 m</b></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ═══ 4 · CÓMO FUNCIONA (01:40) — flujo conectado ═══ -->
+<section class="section" id="como-funciona" data-od-id="como-funciona">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span class="time num">01:40</span>03 · Cómo funciona</p>
+      <h2>Ir a dormir en 3 toques.</h2>
+      <p class="lead">Sin cuentas interminables, sin configurar sensores, sin leer un manual. Abres la app y estás a tres toques de dormirte.</p>
+    </div>
+    <ol class="flow">
+      <li class="step" data-od-id="paso-1" data-reveal>
+        <span class="s-num">01</span>
+        <h3>Elige tu sonido</h3>
+        <p>Lluvia sobre hojas, ruido blanco u olas. Toca el que te calme — para la mayoría, el primero ya funciona.</p>
+        <div class="step-vis" aria-hidden="true">
+          <span class="pill on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0M3 16c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0"/></svg>Lluvia</span>
+          <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M6 8h12M6 16h12"/></svg>Ruido blanco</span>
+          <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>Olas</span>
+        </div>
+      </li>
+      <li class="step" data-od-id="paso-2" data-reveal>
+        <span class="s-num">02</span>
+        <h3>Ajusta el temporizador</h3>
+        <p>15, 30, 45 o 60 minutos. El audio se apaga solo: ni tú ni tu celular pasan la noche despiertos.</p>
+        <div class="step-vis" aria-hidden="true">
+          <span class="stepper">
+            <button type="button" tabindex="-1" aria-label="Menos">−</button>
+            <b>45 min</b>
+            <button type="button" tabindex="-1" aria-label="Más">+</button>
+          </span>
+        </div>
+      </li>
+      <li class="step" data-od-id="paso-3" data-reveal>
+        <span class="s-num">03</span>
+        <h3>Activa el modo dormir</h3>
+        <p>La pantalla se atenúa, empieza la lluvia y tu alarma de ciclo queda lista para mañana. Tres toques, cero fricción.</p>
+        <div class="step-vis" aria-hidden="true">
+          <span class="pill-done"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.6 14.6A8.8 8.8 0 0 1 9.4 3.4a.6.6 0 0 0-.8-.7 9.9 9.9 0 1 0 12.7 12.7.6.6 0 0 0-.7-.8Z"/></svg>Modo dormir activado</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══ 5 · POR QUÉ SLEEPFLOW (02:15) — cabecera pegajosa + tabla ═══ -->
+<section class="section" id="por-que" data-od-id="por-que">
+  <div class="container">
+    <div class="sec-grid">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow"><span class="time num">02:15</span>04 · Por qué SleepFlow</p>
+        <h2>Lo que las otras apps le quitaron a tu descanso.</h2>
+        <p class="lead">Compara con lo que ya conoces. La diferencia no es una función más: es todo lo que decidimos no poner.</p>
+      </div>
+      <div>
+        <div class="table-scroll" data-reveal>
+          <table class="compare" data-od-id="tabla-comparativa">
+            <thead>
+              <tr>
+                <th><span style="position:absolute;left:-9999px">Característica</span></th>
+                <th class="us">SleepFlow</th>
+                <th>Sleep Cycle</th>
+                <th>BetterSleep</th>
+                <th>AutoSleep</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Solo tu teléfono, sin accesorios</th>
+                <td class="us yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td>
+              </tr>
+              <tr>
+                <th>Alarma guiada por tu ciclo de sueño</th>
+                <td class="us yes">✓</td><td class="yes">✓</td><td class="mid">~</td><td class="no">✗</td>
+              </tr>
+              <tr>
+                <th>Diseñada para horarios irregulares</th>
+                <td class="us yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td>
+              </tr>
+              <tr>
+                <th>Métricas simples, cero curva de aprendizaje</th>
+                <td class="us yes">✓</td><td class="no">✗</td><td class="mid">~</td><td class="no">✗</td>
+              </tr>
+              <tr>
+                <th>En español y contextualizada para LatAm</th>
+                <td class="us yes">✓</td><td class="mid">~</td><td class="mid">~</td><td class="no">✗</td>
+              </tr>
+              <tr>
+                <th>Bajo consumo de batería</th>
+                <td class="us yes">✓</td><td class="mid">~</td><td class="mid">~</td><td class="mid">~</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="legend" data-reveal>
+          <span><b>✓</b>Sí, por diseño</span>
+          <span><b>~</b>Parcial o limitado</span>
+          <span><b>✗</b>No disponible o requiere accesorio</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 6 · PARA QUIÉN ES (02:50) — bandas de revista ═══ -->
+<section class="section" id="segmentos" data-od-id="segmentos">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span class="time num">02:50</span>05 · Para quién es</p>
+      <h2>Hecha para las dos formas peruanas de dormir mal.</h2>
+      <p class="lead">No todos pierden el sueño por la misma razón. Por eso SleepFlow tiene dos modos de uso — y ninguno asume que duermes de noche.</p>
+    </div>
+    <div style="margin-top: var(--gap-xl)">
+      <article class="persona-band" data-od-id="persona-camila" data-reveal>
+        <div>
+          <div class="pb-head">
+            <span class="avatar" aria-hidden="true">C</span>
+            <div>
+              <h3>Camila, 24</h3>
+              <span class="meta">Buscadora de descanso · estudiante con medio tiempo</span>
+            </div>
+          </div>
+          <p class="pb-use"><b>SleepFlow para ella:</b> sonidos que calman la mente antes de dormir y un resumen semanal para entender qué le funciona.</p>
+        </div>
+        <blockquote>Me acuesto a las 11, pero mi mente sigue acelerada. Reviso el reloj a la 1 y todavía estoy dando vueltas.</blockquote>
+      </article>
+      <article class="persona-band" data-od-id="persona-jorge" data-reveal>
+        <div>
+          <div class="pb-head">
+            <span class="avatar" aria-hidden="true">J</span>
+            <div>
+              <h3>Jorge, 31</h3>
+              <span class="meta">Horarios irregulares · enfermero con turnos rotativos</span>
+            </div>
+          </div>
+          <p class="pb-use"><b>SleepFlow para él:</b> alarma de ciclo programada a cualquier hora y sonidos que bloquean el ruido del día.</p>
+        </div>
+        <blockquote>Mi cuerpo nunca sabe si es de día o de noche. Duermo cuando puedo y con la luz pegando en la ventana.</blockquote>
+      </article>
+    </div>
+    <p class="meta seg-note" data-reveal>Caso de uso central: “duerme a cualquier hora” — después del turno nocturno, Jorge programa su alarma a las 15:00 y el ciclo guiado hace el resto.</p>
+  </div>
+</section>
+
+<!-- ═══ 7 · PRECIOS (03:30) ═══ -->
+<section class="section" id="precios" data-od-id="precios">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <p class="eyebrow"><span class="time num">03:30</span>06 · Precios</p>
+      <h2>Gratis lo esencial. Premium lo extraordinario.</h2>
+      <p class="lead">Los sonidos y la alarma guiada son gratis para siempre. Premium solo añade profundidad para quien quiere más.</p>
+    </div>
+    <div class="plans">
+      <article class="plan free" data-od-id="plan-gratis" data-reveal>
+        <h3>Gratis</h3>
+        <div class="price"><b class="num">S/ 0</b><span>para siempre</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Sonidos básicos: lluvia y ruido blanco</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Alarma de ciclo guiada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Resumen semanal simple</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Temporizadores de apagado automático</li>
+        </ul>
+        <a class="btn btn-secondary" href="#descargar">Descargar gratis</a>
+      </article>
+      <article class="plan premium" data-od-id="plan-premium" data-reveal>
+        <span class="plan-tag">Recomendado</span>
+        <h3>Premium</h3>
+        <div class="price"><b class="num">S/ 7.90</b><span>/ mes · precio referencial</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Historial de sueño extendido</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Paisajes sonoros premium</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Recomendaciones personalizadas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Todo lo del plan Gratis</li>
+        </ul>
+        <a class="btn btn-primary" href="#descargar" data-od-id="cta-premium">Empezar con Premium</a>
+      </article>
+    </div>
+    <p class="meta plans-foot" data-reveal>Modelo freemium: sin anuncios en ningún plan. El precio final se definirá al lanzar en tiendas.</p>
+  </div>
+</section>
+
+<!-- ═══ 8 · TESTIMONIOS (04:10) — cita gigante + dúo ═══ -->
+<section class="section" id="testimonios" data-od-id="testimonios">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span class="time num">04:10</span>07 · Voces reales</p>
+      <h2>Lo que nos dijeron antes de existir.</h2>
+      <p class="lead">Frases textuales de nuestras entrevistas de descubrimiento (TB1). SleepFlow nació de exactamente estas noches.</p>
+    </div>
+    <figure class="quote-hero" data-od-id="quote-camila" data-reveal>
+      <blockquote>Me acuesto a las 11, pero mi mente sigue acelerada. Siento que pierdo horas dando vueltas en la cama.</blockquote>
+      <figcaption><b>Camila, 24</b><span class="meta">Estudiante con medio tiempo · Entrevista TB1</span></figcaption>
+    </figure>
+    <div class="quote-duo">
+      <figure data-od-id="quote-jorge" data-reveal>
+        <blockquote>Mi cuerpo nunca sabe si es de día o de noche. Duermo cuando puedo, entre turnos.</blockquote>
+        <figcaption><b>Jorge, 31</b><span class="meta">Enfermero, turnos rotativos · Entrevista TB1</span></figcaption>
+      </figure>
+      <figure data-od-id="quote-tercera" data-reveal>
+        <blockquote>Sé que duermo mal, pero no sé por qué. Nadie me ha explicado nada en palabras simples.</blockquote>
+        <figcaption><b>Entrevistada de usuario</b><span class="meta">Sesión de descubrimiento · TB1, Grupo 02</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 9 · FAQ (04:40) ═══ -->
+<section class="section" id="faq" data-od-id="faq">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <p class="eyebrow"><span class="time num">04:40</span>08 · Preguntas frecuentes</p>
+      <h2>Lo que todos preguntan.</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <details data-od-id="faq-wearable">
+        <summary>¿Necesito un reloj inteligente o algún accesorio?</summary>
+        <p class="a">No. SleepFlow funciona 100% con tu teléfono: los sonidos, la alarma guiada y el registro semanal no requieren wearables ni sensores externos.</p>
+      </details>
+      <details data-od-id="faq-dia">
+        <summary>¿Funciona si duermo de día?</summary>
+        <p class="a">Sí. La alarma de ciclo se programa a cualquier hora y los sonidos ayudan a bloquear el ruido ambiental. Está pensada justo para quienes trabajan con turnos rotativos.</p>
+      </details>
+      <details data-od-id="faq-bateria">
+        <summary>¿Consume mucha batería?</summary>
+        <p class="a">No. El modo dormir atenúa la pantalla, el temporizador apaga el audio automáticamente y el consumo está optimizado para pasar toda la noche encendido sin sustos.</p>
+      </details>
+      <details data-od-id="faq-medico">
+        <summary>¿Reemplaza un diagnóstico médico?</summary>
+        <p class="a">No. SleepFlow es una herramienta de bienestar: no es un dispositivo médico ni sustituye una evaluación clínica. Si sospechas de un trastorno del sueño, consulta a un profesional de salud.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 10 · CTA FINAL (06:45 · amanecer) ═══ -->
+<section class="section cta-final" id="descargar" data-od-id="cta-final">
+  <div class="container inner" data-reveal>
+    <p class="eyebrow"><span class="time num">06:45</span>09 · Empieza esta noche</p>
+    <h2>Esta noche, duerme mejor.</h2>
+    <p class="lead">Descarga SleepFlow, pon la lluvia en 45 minutos y deja que el ciclo guiado te despierte. Simple como debe ser.</p>
+    <div class="badges">
+      <a class="store" href="#descargar" data-od-id="badge-appstore">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08ZM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z"/></svg>
+        <span><small>Descargar en</small><strong>App Store</strong></span>
+      </a>
+      <a class="store" href="#descargar" data-od-id="badge-googleplay">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5V3.5c0-.6.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.75-.84-1.35Zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27Zm3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31ZM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66Z"/></svg>
+        <span><small>Disponible en</small><strong>Google Play</strong></span>
+      </a>
+    </div>
+    <p class="meta hero-note">Gratis para empezar · Sin wearables · En español</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ 11 · FOOTER ═══ -->
+<footer class="pagefoot" data-od-id="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#inicio">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--accent)"><path d="M20.6 14.6A8.8 8.8 0 0 1 9.4 3.4a.6.6 0 0 0-.8-.7 9.9 9.9 0 1 0 12.7 12.7.6.6 0 0 0-.7-.8Z"/></svg>
+          SleepFlow
+        </a>
+        <p>Sleep tech peruana centrada en la simplicidad radical: todo lo esencial para dormir mejor, nada de más.</p>
+      </div>
+      <div class="foot-col" data-od-id="footer-producto">
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="#pilares">Funciones</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#descargar">Descargar</a></li>
+        </ul>
+      </div>
+      <div class="foot-col" data-od-id="footer-redes">
+        <h4>Redes</h4>
+        <ul>
+          <li><a class="social" href="#inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
+          <li><a class="social" href="#inicio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.2 1.8 3.6 4 3.9v3c-1.5 0-2.9-.5-4-1.3v6.1a6.3 6.3 0 1 1-6.3-6.3c.3 0 .7 0 1 .1v3.2a3.1 3.1 0 1 0 2.2 3V3h3.1Z"/></svg>TikTok</a></li>
+          <li><a href="mailto:contacto@sleepflow.pe">contacto@sleepflow.pe</a></li>
+        </ul>
+      </div>
+      <div class="foot-col" data-od-id="footer-aviso">
+        <h4>Aviso importante</h4>
+        <p class="foot-disclaimer">SleepFlow es un proyecto académico de bienestar. No es un dispositivo médico ni sustituye un diagnóstico o tratamiento clínico.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 SleepFlow · CC52 Ingeniería de Software · UPC · Grupo 02</span>
+      <span>Leon · Azama · Huayta · Moharam · Valdivia</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
