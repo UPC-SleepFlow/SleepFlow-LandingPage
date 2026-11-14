@@ -22,13 +22,13 @@ Este repositorio contiene la **Landing Page** del producto: una página estátic
 
 ## ✍️ Autores
 
-| Integrante | Rol |
-|---|---|
-| Leon | Miembro del equipo |
-| Azama | Miembro del equipo |
-| Huayta | Miembro del equipo |
-| Moharam | Miembro del equipo |
-| Valdivia | Miembro del equipo |
+| # | Integrante | Código UPC |
+|---|---|---|
+| 1 | Leon Muñoz, Loren's Isabel | U20251B824 |
+| 2 | Azama Yoshida, Diego Kisey | U202421514 |
+| 3 | Huayta Fuentes, Hernán Gabriel | U202320776 |
+| 4 | Moharam Bonilla, Tagwa | U202321870 |
+| 5 | Valdivia Barrantes, Maria Luisa | U202314408 |
 
 *Equipo 02 — CC52 UPC*
 
